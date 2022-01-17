@@ -1,7 +1,18 @@
 function createHome(){
-    let test = document.createElement('p');
-    test.innerHTML = 'this is the homepage';
-    content.appendChild(test);
+    let contentDiv = document.getElementById('contentDiv');
+    contentDiv.innerHTML = '';
+
+    let name = document.createElement('h1');
+    name.innerHTML = 'Smoke Sesh BBQ';
+    contentDiv.appendChild(name);
+
+    let info = document.createElement('p');
+    info.innerHTML = 'The best BBQ around! Our food has heft';
+    contentDiv.appendChild(info);
+
+    let image = document.createElement('img');
+    image.src = './images/bbq.jpeg';
+    contentDiv.appendChild(image);
 }
 
 export{

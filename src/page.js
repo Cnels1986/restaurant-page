@@ -3,35 +3,30 @@ import { createMenu } from './menu';
 import { createContact } from './contact';
 
 function createNav(){
-    const navContainer = document.createElement('div');
+    const navContainer = document.createElement('nav');
 
     let homeNav = document.createElement('button');
     homeNav.innerHTML = 'Home';
     homeNav.addEventListener('click', () => {
-        reset();
         createHome();
-        createFooter();
     });
 
     let menuNav = document.createElement('button');
     menuNav.innerHTML = 'Menu';
     menuNav.addEventListener('click', () => {
-        reset();
         createMenu();
-        createFooter();
     });
 
     let contactNav = document.createElement('button');
     contactNav.innerHTML = 'Contact';
     contactNav.addEventListener('click', () => {
-        reset();
         createContact();
-        createFooter();
     })
 
     navContainer.appendChild(homeNav);
     navContainer.appendChild(menuNav);
     navContainer.appendChild(contactNav);
+
     content.appendChild(navContainer);
 }
 
@@ -49,9 +44,15 @@ function reset(){
     createNav();
 }
 
-// initial page load, loads to the homepage of the site
+
 function pageLoad(){
     createNav();
+    
+    // div will contain all the content, allowing the nav and footer to remain untouched/changed
+    let contentDiv = document.createElement('div');
+    contentDiv.setAttribute('id', 'contentDiv');
+    content.appendChild(contentDiv);
+
     createHome();
     createFooter();
 }
