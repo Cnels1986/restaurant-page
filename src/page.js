@@ -34,7 +34,7 @@ function createFooter(){
     const footer = document.createElement('footer');
     let a = document.createElement('a');
     a.setAttribute('href', 'https://github.com/Cnels1986');
-    a.innerHTML = '&copy Chris Nelson 2021';
+    a.innerHTML = '&copy Chris Nelson 2022';
     footer.appendChild(a);
     content.appendChild(footer);
 }
@@ -47,7 +47,7 @@ function reset(){
 
 function pageLoad(){
     createNav();
-    
+
     // div will contain all the content, allowing the nav and footer to remain untouched/changed
     let contentDiv = document.createElement('div');
     contentDiv.setAttribute('id', 'contentDiv');

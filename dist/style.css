@@ -1,1 +1,62 @@
+body{
+    background-image: url('./images/background.jpeg');
+    background-position: bottom;
+    background-size: cover;
+}
 
+#content{
+     width: 80%;
+     height: 100vh;
+     background-color: wheat;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+nav{
+    font-family: 'Lobster', cursive;
+    background-color: black;;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid darkred;
+}
+
+nav button{
+    background-image: url('./images/buttonbg.jpeg');
+    height: 60px;
+    width: 250px;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    border: none;
+    color: wheat;
+}
+
+nav button:hover{
+    color: #EF941F;
+    text-shadow: 0px 0px 4px red;
+}
+
+footer{
+    background-color: darkred;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+
+footer a{
+    color: wheat;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
+.homeImage{
+    height: 300px;
+    width: auto;
+}
+
+#homeFlexDiv{
+    display: flex;
+    flex-direction: column;
+}
