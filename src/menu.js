@@ -3,7 +3,7 @@ function createMenu(){
     contentDiv.innerHTML = '';
 
     let dishTitle = document.createElement('h3');
-    dishTitle.innerHTML = 'Main Dishes';
+    dishTitle.innerHTML = 'Main Dishes:';
     contentDiv.appendChild(dishTitle);
 
     createFoodItem('Full Rack Ribs', 'Full rack of fall off the bone ribs. Cherry and applewood smoked deliciousness. Available sauced or naked.', 23.99);
@@ -15,7 +15,7 @@ function createMenu(){
     createFoodItem('Dozen Smoked Wings', 'A dozen mesquite smoked wings. Tossed in your choice of sauce and server with ranch or bleu cheese.', 14.99);
 
     let sideTitle = document.createElement('h3');
-    sideTitle.innerHTML = 'Sides';
+    sideTitle.innerHTML = 'Sides:';
     contentDiv.appendChild(sideTitle);
 
     createFoodItem('Mac n Cheese', 'Thicc, smoked, cheesey goodness.', 5.99);
